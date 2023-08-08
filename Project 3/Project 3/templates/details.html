@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{%autoescape None %}
+
+{% block header %}
+    <a class="brand" href="#"></a>
+
+    <a href="/cart" class="button button-primary u-pull-right simpleStore_viewCart">
+        <i class="fa fa-shopping-cart"></i> Cart <span class="simpleCart_total"></span>
+    </a>
+{% end %}
+
+{% block content %}
+    <div class="row">
+        <div class="simpleCart_shelfItem simpleStore_detailView">
+            <a href="/" class="close view_close">&times;</a>
+
+            <div class="row">
+                <div class="four columns">
+                    <a href="/directory/{{ product[0][8] }}" >
+                        <img src="/{{ product[0][2] }}" class="item_thumb"/>
+                    </a>
+                </div>
+                <div class="eight columns">
+                    <h5 class="item_name">{{ product[0][1] }}</h5>
+
+                    <p class="item_description">{{ product[0][3] }}<br/>SKU: {{ sku }}</p>
+                    <!-- <p class="item_description"><script>alert('adfadf');</script></p> -->
+                    <span class="item_price">{{ product[0][4] }}</span>
+
+                    <input type="hidden" value="1" min="1" step="1" class="item_Quantity">
+                    <form action="/product/add" method="POST">
+                        <div class="simpleStore_options">
+                        {% if product[0][5] %}
+                        {% for thing in product %}
+                            <label>{{ thing[5] }}</label>
+                            <select class="item_{{ thing[0] }}" name="option">
+                            {% for line in thing[6].split(',') %}
+                                <option value="{{ line }}">{{ line }}</option>
+                            {% end %}
+                            </select>
+                        {% end %}
+                        {% end %}
+                        </div>
+                        <input type="hidden" name="product" value="{{ product[0][0] }}" />
+                        <a class="item_add button u-pull-right" onclick="$(this).closest('form').submit()">Add to Cart</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% end %}
+
+{% block footer %}
+
+{% end %}

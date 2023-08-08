@@ -1,0 +1,6 @@
+tornado
+mysqlclient
+python-magic
+bcrypt
+pycrypto
+pymongo

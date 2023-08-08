@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <a class="brand" href="#"></a>
+
+   <!-- <a href="/cart" class="button button-primary u-pull-right simpleStore_viewCart">
+        <i class="fa fa-shopping-cart"></i> Cart <span class="simpleCart_total"></span>
+    </a>-->
+{% end %}
+
+{% block content %}
+<div class="simpleStore_container">
+    {% for item in products %}
+        {% if item[0]%3==1 %}
+            <div class="row">
+        {% end %}
+        {% module Small(item) %}
+        {% if item[0]%3==0 %}
+            </div>
+        {% end %}
+    {% end %}
+    </div>
+</div>
+{% end %}
+
+{% block footer %}
+
+{% end %}

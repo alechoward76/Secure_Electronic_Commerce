@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% end %}
+
+{% block content %}
+<html>
+    <div class = "box">
+        <body>
+            <h1>Confirm Payment</h1>
+            <form action = "/confirm" method ="post">
+                {% module xsrf_form_html() %}
+                <label for="exp">CVV:</label>
+                <input type="tel" name="cvv" inputmode="numeric" minlength="3" maxlength="3" placeholder="xxx" pattern="^[0-9]{3}$" required/>
+                <input type="submit" name="confirm" value="Confirm"/>
+            </form>
+        </body>
+    </div>
+</html>
+
+{% end %}
+{% block footer %}
+{% end %}

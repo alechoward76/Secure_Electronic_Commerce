@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{%autoescape None %}
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Attacker Website</title>
+    <meta name="description" content="">
+    <meta name="author" content="Issuer Inc">
+
+</head>
+<body>
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container simpleStore" style="text-align: center;">
+        <div class="row">
+            {% block header %}{% end %}
+        </div>
+
+        {% block content %}{% end %}
+
+        <div class="footer">
+            {% block footer %}{% end %}
+        </div>
+    </div>
+
+
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>

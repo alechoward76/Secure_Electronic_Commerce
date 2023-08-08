@@ -1,0 +1,3 @@
+create table info_p3 (id SERIAL PRIMARY KEY, name VARCHAR(100), phone_number VARCHAR(15), email VARCHAR(100), salt_hash_pass VARCHAR(100), address1 VARCHAR(255), address2 VARCHAR(255), city VARCHAR(255), state VARCHAR(255), zip INT, exp_month INT, exp_year INT, username VARCHAR(255), token BLOB);
+
+create table orders (id INT NOT NULL AUTO_INCREMENT, order_number INT, timestamp DATETIME, customer_id INT, item_id INT, item_price VARCHAR(255), item_options VARCHAR(255), order_total VARCHAR(255), payment_token BLOB, primary key (id));

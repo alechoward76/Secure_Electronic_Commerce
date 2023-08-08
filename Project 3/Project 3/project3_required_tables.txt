@@ -1,0 +1,20 @@
+Also in p3_instructions.pdf
+
+ISSUER TABLES
+
+create table ccinfo (ivpan BLOB, pan BLOB, ivcvv BLOB, cvv BLOB, expmonth INT, expyear INT, billzip INT, customer VARCHAR(40), primary key (expmonth,expyear,billzip,customer));
+
+create table auth (trans_id INT NOT NULL AUTO_INCREMENT, tpan BLOB, cvv BLOB, exp_date VARCHAR(255), amount VARCHAR(255), name VARCHAR(255), billzip INT, merchant VARCHAR(255), timestamp DATETIME, authorization VARCHAR(24), primary key (trans_id));
+
+
+TOKEN VAULT TABLES
+
+create table panmap (tpan VARCHAR(255), paniv BLOB, panc BLOB, expdate VARCHAR(255), billzip INT, billname VARCHAR(255), primary key (tpan, billname, expdate));
+
+
+MERCHANT TABLES
+
+create table info_p3 (id SERIAL PRIMARY KEY, name VARCHAR(100), phone_number VARCHAR(15), email VARCHAR(100), salt_hash_pass VARCHAR(100), address1 VARCHAR(255), address2 VARCHAR(255), city VARCHAR(255), state VARCHAR(255), zip INT, exp_month INT, exp_year INT, username VARCHAR(255), token BLOB);
+
+create table orders (id INT NOT NULL AUTO_INCREMENT, order_number INT, timestamp DATETIME, customer_id INT, item_id INT, item_price VARCHAR(255), item_options VARCHAR(255), order_total VARCHAR(255), payment_token BLOB, primary key (id));
+

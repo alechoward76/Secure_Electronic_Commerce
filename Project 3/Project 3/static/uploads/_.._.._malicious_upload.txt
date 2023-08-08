@@ -1,0 +1,76 @@
+Received: from mail-iw0-f170.google.com (mail-iw0-f170.google.com [209.85.214.170])
+	by mtain-dh09.r1000.mx.aol.com (Internet Inbound) with ESMTP id 09FBE380001A4
+	for <somevictim@aim.com>; Sun, 22 Aug 2010 23:55:00 -0400 (EDT)
+Received: by iwn37 with SMTP id 37so5600219iwn.1
+        for <somevictim@aim.com>; Sun, 22 Aug 2010 20:54:59 -0700 (PDT)
+Received: by 10.231.170.13 with SMTP id b13mr5997979ibz.62.1282535699080;
+        Sun, 22 Aug 2010 20:54:59 -0700 (PDT)
+X-Forwarded-To: somevictim@aim.com
+X-Forwarded-For: somemope@gmail.com somevictim@aim.com
+Delivered-To: somemope@gmail.com
+Received: by 10.231.153.213 with SMTP id l21cs191553ibw;
+        Sun, 22 Aug 2010 20:54:58 -0700 (PDT)
+Received: by 10.114.110.10 with SMTP id i10mr5332310wac.70.1282535698221;
+        Sun, 22 Aug 2010 20:54:58 -0700 (PDT)
+Received: from snt0-omc1-s43.snt0.hotmail.com (snt0-omc1-s43.snt0.hotmail.com [65.54.61.80])
+        by mx.google.com with ESMTP id d21si14483334wam.120.2010.08.22.20.54.57;
+        Sun, 22 Aug 2010 20:54:58 -0700 (PDT)
+Received-SPF: pass (google.com: domain of notevenclose@live.com designates 65.54.61.80 as permitted sender) client-ip=65.54.61.80;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of notevenclose@live.com designates 65.54.61.80 as permitted sender) smtp.mail=notevenclose@live.com
+Received: from SNT0-MC1-F1.Snt0.hotmail.com ([65.55.90.8]) by snt0-omc1-s43.snt0.hotmail.com with Microsoft SMTPSVC(6.0.3790.4675);
+	 Sun, 22 Aug 2010 20:54:43 -0700
+Resent-Message-ID: <SNT0-MC1-F18346EC72ED3B10D4C770B8820@phx.gbl>
+Resent-To: somemope@gmail.com
+Resent-Date: Sun, 22 Aug 2010 20:54:42 -0700
+Resent-From: notevenclose@live.com
+X-HM-Routing-Path:zU+Qfqo8XdEOQYrq/R0POCtKzw2RKuTWEmBbdpqEXpj39AWE3IF+7FwcXr7qhFI0y+bFHjMIi3+mqwMYekU1PYQqi1JE6TeOfreD2BrmHM/etL5KFNtqmkFS6HBpeofat5gfYzyfXEI=
+Received: from eastrmmtao105.cox.net ([68.230.240.47]) by SNT0-MC1-F1.Snt0.hotmail.com with Microsoft SMTPSVC(6.0.3790.4675);
+	 Sun, 22 Aug 2010 20:54:42 -0700
+Received: from eastrmimpo01.cox.net ([68.1.16.119])
+          by eastrmmtao105.cox.net
+          (InterMail vM.8.00.01.00 201-2244-105-20090324) with ESMTP
+          id <20100823035442.PWBG14030.eastrmmtao105.cox.net@eastrmimpo01.cox.net>
+          for <notevenclose@live.com>; Sun, 22 Aug 2010 23:54:42 -0400
+Received: from ebay.com ([70.185.220.24])
+	by eastrmimpo01.cox.net with bizsmtp
+	id xfuB1e0071jP4qE02fuMBD; Sun, 22 Aug 2010 23:54:42 -0400
+X-VR-Score: 150.00
+X-Authority-Analysis: v=1.1 cv=TceP/QV+tB1xazyC0zfHbyOqM5jj19w+wovI+qpsmak=
+ c=1 sm=1 a=kj9zAlcOel0A:10 a=IpcxUYvvpYUKWj7xcku76A==:17 a=tOnirZDqAAAA:8
+ a=pjdaNNIBAAAA:8 a=cQW9YIjGaGyHWFxZTBsA:9 a=WSclhDQTG_R7e7xZliAA:7
+ a=fcHtVD2nJd5cfhY5y2fHBURnmFMA:4 a=CjuIK1q_8ugA:10 a=OshN9FXYPr8A:10
+ a=P9tZf-99r6YA:10 a=s3MgKHGd8tkA:10 a=1vlCVW5fDQkA:10 a=m0jYhBHBfA0A:10
+ a=a4heeSUPNxgA:10 a=qiWi7Edwir4A:10 a=NWVoK91CQyQA:10 a=uGe2XmjFOgeHAbum:21
+ a=fJ0XX-t1QE4RlQzx:21 a=IpcxUYvvpYUKWj7xcku76A==:117
+X-CM-Score: 0.00
+From: "Ebay Customer Support" <ebay-support@ebay.com>
+To: "Some Victim" <somevictim@aim.com>
+Date: Thu, 23 Aug 2010 16:27:03 -0600
+Subject: Account cancelation
+Content-type: text/html; charset=US-ASCII
+Message-Id: <20100823035442.PWBG14030.eastrmmtao105.cox.net@eastrmimpo01.cox.net>
+X-OriginalArrivalTime: 23 Aug 2010 03:54:42.0527 (UTC) FILETIME=[EAEE96F0:01CB4276]
+x-aol-global-disposition: G
+X-AOL-SCOLL-SCORE: 1:2:344343712:93952408  
+X-AOL-SCOLL-URL_COUNT: 1  
+x-aol-sid: 3039ac1d411d4c71f114523e
+X-AOL-IP: 209.85.214.170
+X-AOL-SPF: domain : gmail.com SPF : pass
+
+<html>
+<p>
+Dear Victim,
+This message is to notify you that on August 26th your account will be cancelled, unless you verify your account information.
+</p>
+<p>
+In order to prevent any interruption in your service please fill out the form <a href="http://129.244.247.188" alt="eBay.com/AccountServices">here</a>. Rest assured this website uses SSL/TLS security so your information is protected.
+<p>
+Thank you,<br>
+Ebay Account Services<br>
+2065 Hamilton Avenue<br>
+San Jose, California 95125<br>
+(800) 322-9266<br>
+(408) 376-7400<br>
+</p>
+</html>
+

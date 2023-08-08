@@ -1,0 +1,10 @@
+backports-abc==0.5
+bcrypt==3.1.4
+certifi==2017.11.5
+cffi==1.11.2
+MySQL-python==1.2.5
+pycparser==2.18
+python-magic==0.4.13
+singledispatch==3.4.0.3
+six==1.11.0
+tornado==4.5.2

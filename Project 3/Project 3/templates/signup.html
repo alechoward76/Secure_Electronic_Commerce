@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% extends "base.html" %}
+
+<head>
+{%autoescape None %}
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <meta name="description" content="Create an account.">
+    <meta name="author" content="Bill Brasky">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="{{ static_url("imports.min.css") }}" type="text/css">
+    <link rel="stylesheet" href="{{ static_url("simpleStore.min.css") }}" type="text/css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="{{ static_url("favicon.png") }}">
+
+    <!-- Scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container simpleStore">
+        <div class="row">
+            {% block header %}{% end %}
+        </div>
+
+        {% block content %} 
+        
+        <form action="{{ request.path }}" method="post">
+            <div>{{ _("Username") }} <input type="text" name="username"/></div>
+            <div>{{ _("Phone Number") }} <input type="text" name="phone_num"/></div>
+            <div>{{ _("Email") }} <input type="text" name="email"/></div>
+            <div>{{ _("Password") }} <input type="password" name="password"/></div>
+            <div>{{ _("Confirm Password") }} <input type="password" name="confirm"/></div>
+            <div>{{ _("Name") }} <input type="text" name="name"/></div>
+            <div>{{ _("Address 1") }} <input type="text" name="address1"/></div>
+            <div>{{ _("Address 2") }} <input type="text" name="address2"/></div>
+            <div>{{ _("City") }} <input type="text" name="city"/></div>
+            <div>{{ _("State") }} <input type="text" name="state"/></div>
+            <div>{{ _("Zip Code") }} <input type="text" name="zip_code"/></div>
+            <div>{{ _("Card Number") }} <input type="text" name="card_number"/></div>
+            <div>{{ _("Expiration Month") }} <input type="text" name="exp_month"/></div>
+            <div>{{ _("Expiration Year") }} <input type="text" name="exp_year"/></div>
+            
+            
+            
+            <div><input type="submit" value="{{ ("Sign Up") }}" /></div>
+            
+            {% module xsrf_form_html() %}
+        </form>
+        
+        
+        {% end %}
+
+        <div class="footer">
+            {% block footer %}{% end %}
+        </div>
+    </div>
+
+
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
+

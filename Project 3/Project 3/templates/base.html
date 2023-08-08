@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{%autoescape None %}
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Classic Store</title>
+    <meta name="description" content="A store for things you never knew you didn't need.">
+    <meta name="author" content="Bill Brasky">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="{{ static_url("imports.min.css") }}" type="text/css">
+    <link rel="stylesheet" href="{{ static_url("simpleStore.min.css") }}" type="text/css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="{{ static_url("favicon.png") }}">
+
+    <!-- Scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container simpleStore">
+        <div class="row">
+
+            <a href="/cart" class="button button-primary simpleStore_checkout u-pull-right">Cart<i class="fa fa-arrow-right"></i></a>
+            
+            <a href="/" class="button button-primary simpleStore_checkout u-pull-right">Home <i class="fa fa-arrow-right"></i></a>
+            
+            {% if current_user %}
+            <a href="/logout" class="button button-primary simpleStore_checkout u-pull-right">Logout <i class="fa fa-arrow-right"></i></a>
+            <a href="/account" class="button button-primary simpleStore_checkout u-pull-right">Account <i class="fa fa-arrow-right"></i></a>
+            
+            {% else %}
+            <a href="/login" class="button button-primary simpleStore_checkout u-pull-right">Login <i class="fa fa-arrow-right"></i></a>
+            <a href="/signup" class="button button-primary simpleStore_checkout u-pull-right">Signup <i class="fa fa-arrow-right"></i></a>
+            
+            {% end %}
+            {% block header %}{% end %}
+        </div>
+
+        {% block content %}{% end %}
+
+        <div class="footer">
+            {% block footer %}{% end %}
+        </div>
+    </div>
+
+
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>

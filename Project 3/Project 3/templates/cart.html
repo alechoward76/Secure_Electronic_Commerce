@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <a class="brand" href="#"></a>
+
+    <a href="/cart" class="button button-primary u-pull-right simpleStore_viewCart">
+        <i class="fa fa-shopping-cart"></i> Cart <span class="simpleCart_total"></span>
+    </a>
+   
+{% end %}
+
+{% block content %}
+    <div class="row">
+        <div class="simpleStore_cart">
+            <h2>Cart</h2>
+            <a href="/" class="close">&times;</a>
+
+            <div class="row">
+                <div class="eight columns">
+                    <div class="simpleCart_items">
+                        <div>
+                            <div class="headerRow">
+                                <div class="item-name">Name</div>
+                                <div class="item-price">Price</div>
+                                <div class="item-decrement"></div>
+                                <div class="item-quantity">Qty</div>
+                                <div class="item-increment"></div>
+                                <div class="item-total">SubTotal</div>
+                                <div class="item-remove"></div>
+                            </div>
+                            {% for item in products %}
+                            <div class="itemRow row-0 odd" id="cartItem_SCI-1">
+                                <div class="item-name">{{ item[2] }} [{{ item[5] }}]</div>
+                                <div class="item-price">${{ item[1] }}</div>
+                                <div class="item-decrement">
+                                    <!-- <a href="javascript:;" class="simpleCart_decrement">-</a> -->
+                                </div>
+                                <div class="item-quantity">{{ item[3] }}</div>
+                                <div class="item-increment">
+                                    <!-- <a href="javascript:;" class="simpleCart_increment">+</a> -->
+                                </div>
+                                <div class="item-total">${{ item[4] }}</div>
+                                <div class="item-remove">
+                                    <a href="/product/remove/{{ item[6] }}" class="simpleCart_remove">Remove</a>
+                                </div></div>
+                            {% end %}
+                        </div>
+                    </div>
+                    <a href="/cart/empty" class="simpleCart_empty u-pull-left">Empty Cart <i class="fa fa-trash-o"></i></a>
+                </div>
+                <div class="four columns">
+                    <div class="cart_info">
+                        <div class="cart_info_item cart_itemcount">Items:
+                            <div class="simpleCart_quantity">{{ count }}</div>
+                        </div>
+                        <div class="cart_info_item cart_taxrate">Tax Rate:
+                            <div class="simpleCart_taxRate">8.517%</div>
+                        </div>
+                        <div class="cart_info_item cart_tax">Tax:
+                            <div class="simpleCart_tax">${{ tax }}</div>
+                        </div>
+                        <div class="cart_info_item cart_shipping">Shipping:
+                            <div class="simpleCart_shipping">${{ shipping }}</div>
+                        </div>
+                        <div class="cart_info_item cart_total"><b>Total:
+                            <div class="simpleCart_grandTotal">${{ total + tax + shipping }}</div>
+                        </b></div>
+                        <!--Confirm button project 3--> 
+                        <a href="/confirm" class="button button-primary simpleStore_checkout u-pull-right">Checkout <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% end %}
+
+{% block footer %}
+
+{% end %}

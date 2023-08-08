@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{%autoescape None %}
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Classic Store</title>
+    <meta name="description" content="A store for things you never knew you didn't need.">
+    <meta name="author" content="Bill Brasky">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="{{ static_url("imports.min.css") }}" type="text/css">
+    <link rel="stylesheet" href="{{ static_url("simpleStore.min.css") }}" type="text/css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="{{ static_url("favicon.png") }}">
+
+    <!-- Scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container simpleStore">
+        <div class="row">
+            {% block header %}{% end %}
+        </div>
+
+        {% block content %} 
+        <!--Write html to display a thankyou message on the page--> 
+        <h1>Thank you for your purchase!</h1>
+        
+        
+        
+        {% end %}
+
+        <div class="footer">
+            {% block footer %}{% end %}
+        </div>
+    </div>
+
+
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
+
